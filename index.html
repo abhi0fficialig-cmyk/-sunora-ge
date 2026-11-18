@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunora Green Energy — Rooftop Solar & PM Surya Ghar Experts</title>
+  <meta name="description" content="Sunora Green Energy designs, installs and maintains rooftop solar systems for homes, businesses and farms, with complete PM Surya Ghar Muft Bijli Yojana subsidy support.">
+  <meta name="theme-color" content="#0A3B1F">
+  <link rel="icon" href="assets/logo.jpg">
+
+  <!-- Fonts: bold display + cursive + handwritten + playful -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <img class="pl-main" src="assets/logo-transparent.png" alt="">
+  <p class="pl-msg" id="plMsg">Powering your home with sunshine</p>
+  <p class="pl-load"><span>Loading</span> <b id="plCount">0</b><i>%</i></p>
+</div>
+
+<!-- Global UI -->
+<div class="cursor" id="cursor"><span>Drag</span></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ TOP STRIP ============ -->
+<div class="topstrip">
+  <div class="container topstrip-in">
+    <p class="ts-offer"><i class="ph-fill ph-sun"></i> Get up to <b>₹78,000 subsidy</b> under PM Surya Ghar · <a href="#contact">Book a free site survey <i class="ph-bold ph-arrow-up-right"></i></a></p>
+    <div class="ts-links">
+      <a href="tel:+917600781800"><i class="ph-bold ph-phone"></i> +91 76007 81800</a>
+      <a href="mailto:sunoragreenenergy@gmail.com" class="ts-mail"><i class="ph-bold ph-envelope-simple"></i> sunoragreenenergy@gmail.com</a>
+      <span class="ts-social">
+        <a href="#" aria-label="Instagram"><i class="ph-bold ph-instagram-logo"></i></a>
+        <a href="#" aria-label="Facebook"><i class="ph-bold ph-facebook-logo"></i></a>
+        <a href="#" aria-label="YouTube"><i class="ph-bold ph-youtube-logo"></i></a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header-in">
+    <a href="#home" class="brand" aria-label="Sunora Green Energy home">
+      <img src="assets/logo-transparent.png" alt="Sunora Green Energy logo">
+      <span class="brand-txt"><b>Sunora</b><small>Green Energy</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#why">Why Us</a>
+      <a href="#services">Services</a>
+      <a href="#surya">PM Surya Ghar</a>
+      <a href="#projects">Projects</a>
+      <a href="#faq">FAQs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+917600781800" class="icon-btn" aria-label="Call us"><i class="ph-bold ph-phone-call"></i></a>
+      <a href="#contact" class="btn btn-sun" data-magnetic><span>Free Quote</span><i class="ph-bold ph-arrow-right"></i></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <span class="mmenu-sun" aria-hidden="true"></span>
+  <div class="mmenu-top">
+    <a href="#home" class="mmenu-brand" aria-label="Sunora Green Energy home"><img src="assets/logo-transparent.png" alt="Sunora Green Energy logo"></a>
+    <button class="mmenu-close" id="mmenuClose" aria-label="Close menu"><i class="ph-bold ph-x"></i></button>
+  </div>
+  <nav class="mmenu-nav" aria-label="Mobile">
+    <a href="#home"><span class="mn-label">Home</span><i class="ph-bold ph-arrow-up-right"></i></a>
+    <a href="#about"><span class="mn-label">About</span><i class="ph-bold ph-arrow-up-right"></i></a>
+    <a href="#why"><span class="mn-label">Why Us</span><i class="ph-bold ph-arrow-up-right"></i></a>
+    <a href="#services"><span class="mn-label">Services</span><i class="ph-bold ph-arrow-up-right"></i></a>
+    <a href="#surya"><span class="mn-label">PM Surya Ghar</span><i class="ph-bold ph-arrow-up-right"></i></a>
+    <a href="#projects"><span class="mn-label">Projects</span><i class="ph-bold ph-arrow-up-right"></i></a>
+    <a href="#faq"><span class="mn-label">FAQs</span><i class="ph-bold ph-arrow-up-right"></i></a>
+    <a href="#contact"><span class="mn-label">Contact</span><i class="ph-bold ph-arrow-up-right"></i></a>
+  </nav>
+  <div class="mmenu-cta">
+    <a href="#contact" class="btn btn-sun"><span>Get free quote</span><i class="ph-bold ph-arrow-right"></i></a>
+    <a href="tel:+917600781800" class="mm-call"><i class="ph-fill ph-phone-call"></i><span>Call now</span></a>
+  </div>
+</div>
+
+<!-- ============ MOVING STRIP (after header) ============ -->
+<div class="marquee marquee-sun" aria-label="Our solutions">
+  <div class="marquee-track">
+    <div class="marquee-group">
+      <span>Rooftop Solar</span><i class="ph-fill ph-sun"></i>
+      <span>On-Grid Systems</span><i class="ph-fill ph-lightning"></i>
+      <span>Off-Grid Systems</span><i class="ph-fill ph-leaf"></i>
+      <span>Hybrid + Battery</span><i class="ph-fill ph-sun"></i>
+      <span>Net Metering</span><i class="ph-fill ph-lightning"></i>
+      <span>PM Surya Ghar Subsidy</span><i class="ph-fill ph-leaf"></i>
+      <span>Solar Water Heaters</span><i class="ph-fill ph-sun"></i>
+      <span>AMC &amp; Cleaning</span><i class="ph-fill ph-lightning"></i>
+    </div>
+    <div class="marquee-group" aria-hidden="true">
+      <span>Rooftop Solar</span><i class="ph-fill ph-sun"></i>
+      <span>On-Grid Systems</span><i class="ph-fill ph-lightning"></i>
+      <span>Off-Grid Systems</span><i class="ph-fill ph-leaf"></i>
+      <span>Hybrid + Battery</span><i class="ph-fill ph-sun"></i>
+      <span>Net Metering</span><i class="ph-fill ph-lightning"></i>
+      <span>PM Surya Ghar Subsidy</span><i class="ph-fill ph-leaf"></i>
+      <span>Solar Water Heaters</span><i class="ph-fill ph-sun"></i>
+      <span>AMC &amp; Cleaning</span><i class="ph-fill ph-lightning"></i>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero hero-video" id="home">
+  <div class="hero-media">
+    <video class="hero-vid" autoplay muted loop playsinline preload="auto">
+      <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-in">
+    <div class="hero-copy">
+      <span class="chip hero-chip" data-hero><i class="ph-fill ph-leaf"></i> Clean Energy <em>•</em> Brighter Tomorrow</span>
+      <h1 class="hero-title">
+        <span class="line"><span data-hero>Let the <em class="script hl-word">Sun<svg class="squiggle" viewBox="0 0 220 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 16C40 4 80 4 116 12s72 12 100-4"/></svg></em> pay</span></span>
+        <span class="line"><span data-hero>your bills<b class="dot">.</b></span></span>
+      </h1>
+      <p class="hero-lead" data-hero>Sunora Green Energy designs, installs &amp; maintains premium rooftop solar for homes, businesses and farms — with end-to-end <b>PM Surya Ghar</b> subsidy support, from paperwork to power-on.</p>
+      <div class="hero-actions" data-hero>
+        <a href="#contact" class="btn btn-sun btn-lg" data-magnetic><span>Get Free Quote</span><i class="ph-bold ph-arrow-right"></i></a>
+        <a href="#surya" class="btn btn-ghost btn-lg"><i class="ph-bold ph-calculator"></i><span>Check My Subsidy</span></a>
+      </div>
+    </div>
+
+    
+      </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><span>Scroll</span><i class="ph-bold ph-arrow-down"></i></a>
+</section>
+
+<!-- ============ CROSSED STRIPS (after hero) ============ -->
+<div class="ribbons after-hero" aria-hidden="true">
+  <div class="marquee ribbon r-green">
+    <div class="marquee-track">
+      <div class="marquee-group"><span>Go Solar</span><i class="ph-fill ph-sun"></i><span>Save More</span><i class="ph-fill ph-sun"></i><span>Live Green</span><i class="ph-fill ph-sun"></i><span>Go Solar</span><i class="ph-fill ph-sun"></i><span>Save More</span><i class="ph-fill ph-sun"></i><span>Live Green</span><i class="ph-fill ph-sun"></i></div>
+      <div class="marquee-group"><span>Go Solar</span><i class="ph-fill ph-sun"></i><span>Save More</span><i class="ph-fill ph-sun"></i><span>Live Green</span><i class="ph-fill ph-sun"></i><span>Go Solar</span><i class="ph-fill ph-sun"></i><span>Save More</span><i class="ph-fill ph-sun"></i><span>Live Green</span><i class="ph-fill ph-sun"></i></div>
+    </div>
+  </div>
+  <div class="marquee ribbon r-sun reverse">
+    <div class="marquee-track">
+      <div class="marquee-group"><span>Clean Energy</span><i class="ph-fill ph-leaf"></i><span>Brighter Tomorrow</span><i class="ph-fill ph-leaf"></i><span>Clean Energy</span><i class="ph-fill ph-leaf"></i><span>Brighter Tomorrow</span><i class="ph-fill ph-leaf"></i><span>Clean Energy</span><i class="ph-fill ph-leaf"></i><span>Brighter Tomorrow</span><i class="ph-fill ph-leaf"></i></div>
+      <div class="marquee-group"><span>Clean Energy</span><i class="ph-fill ph-leaf"></i><span>Brighter Tomorrow</span><i class="ph-fill ph-leaf"></i><span>Clean Energy</span><i class="ph-fill ph-leaf"></i><span>Brighter Tomorrow</span><i class="ph-fill ph-leaf"></i><span>Clean Energy</span><i class="ph-fill ph-leaf"></i><span>Brighter Tomorrow</span><i class="ph-fill ph-leaf"></i></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about section" id="about">
+  <div class="container about-in">
+    <div class="about-collage">
+      <span class="dots-grid" aria-hidden="true"></span>
+      <div class="ac ac-1 media" data-reveal="left" data-speed="-0.04">
+        <img src="assets/about-1.webp" alt="Sunora solar engineer holding a solar panel on a rooftop" loading="lazy" decoding="async">
+      </div>
+      <div class="ac ac-2 media" data-reveal="up" data-speed="0.07">
+        <img src="assets/about-2.webp" alt="Sunora Green Energy office reception" loading="lazy" decoding="async">
+      </div>
+      <div class="exp-badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><path id="circExp" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs>
+          <text><textPath href="#circExp" textLength="496" lengthAdjust="spacing">YEARS OF SUNSHINE ✦ TRUSTED SOLAR EXPERTS ✦</textPath></text></svg>
+        <i class="ph-fill ph-sun"></i>
+      </div>
+      <div class="scribble sc-collage"><span>one call for every roof,<br>day or night</span><svg viewBox="0 0 90 50" aria-hidden="true"><path d="M6 4C8 26 30 40 78 34M78 34l-13-7M78 34l-12 9"/></svg></div>
+    </div>
+
+    <div class="about-copy">
+      <div class="sec-head">
+        <span class="kicker" data-reveal><i class="ph-fill ph-sun"></i> who we are</span>
+        <h2 class="title" data-split>Brighter homes, <em class="script">greener</em> tomorrows.</h2>
+      </div>
+      <p class="lead" data-reveal>Sunora Green Energy is a solar EPC company on a simple mission — make clean, affordable sunshine-power the default for every Indian rooftop. We handle everything: site survey, custom design, premium hardware, installation, net-metering and the PM Surya Ghar subsidy paperwork.</p>
+      <p data-reveal>From compact 1 kW homes to large commercial plants, every system is engineered for maximum generation, a sturdy 25-year life and zero headaches for you.</p>
+
+      <ul class="checks" data-reveal>
+        <li><i class="ph-bold ph-check"></i> Premium Tier-1 panels &amp; trusted inverter brands</li>
+        <li><i class="ph-bold ph-check"></i> In-house trained installation team</li>
+        <li><i class="ph-bold ph-check"></i> Subsidy &amp; net-metering paperwork handled</li>
+        <li><i class="ph-bold ph-check"></i> Up to 25-year panel performance warranty</li>
+      </ul>
+
+      <div class="about-foot" data-reveal>
+        <a href="#services" class="btn btn-ink" data-magnetic><span>Explore Services</span><i class="ph-bold ph-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="why section" id="why">
+  <div class="container">
+    <div class="sec-row">
+      <div class="sec-head">
+        <span class="kicker" data-reveal><i class="ph-fill ph-sun"></i> why choose us</span>
+        <h2 class="title" data-split>Solar done <em class="script">right</em>, from roof to remote.</h2>
+      </div>
+      <div class="car-nav sc-host" data-reveal>
+        <button class="car-btn why-prev" aria-label="Previous"><i class="ph-bold ph-arrow-left"></i></button>
+        <button class="car-btn why-next" aria-label="Next"><i class="ph-bold ph-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper why-swiper" data-reveal data-cursor="drag">
+    <div class="swiper-wrapper">
+      <article class="swiper-slide why-card t-lime">
+        <span class="wc-ico"><i class="ph-fill ph-hand-coins"></i></span>
+        <h3>End-to-end subsidy support</h3>
+        <p>We handle PM Surya Ghar registration, DISCOM approvals and net-metering — you just sign.</p>
+        <span class="wc-tag">Zero paperwork stress</span>
+      </article>
+      <article class="swiper-slide why-card t-sun">
+        <span class="wc-ico"><i class="ph-fill ph-solar-panel"></i></span>
+        <h3>Premium components</h3>
+        <p>High-efficiency mono-PERC &amp; bifacial panels paired with top-rated inverters and rust-proof structures.</p>
+        <span class="wc-tag">Built for 25+ years</span>
+      </article>
+      <article class="swiper-slide why-card t-dark">
+        <span class="wc-ico"><i class="ph-fill ph-ruler"></i></span>
+        <h3>Expert engineering</h3>
+        <p>Shadow analysis, load study and structural checks so your system generates every possible unit.</p>
+        <span class="wc-tag">Custom-designed</span>
+      </article>
+      <article class="swiper-slide why-card t-cream">
+        <span class="wc-ico"><i class="ph-fill ph-lightning"></i></span>
+        <h3>Fast installation</h3>
+        <p>Most homes are installed within a few days of approval — clean, safe and tidy work.</p>
+        <span class="wc-tag">Quick power-on</span>
+      </article>
+      <article class="swiper-slide why-card t-sky">
+        <span class="wc-ico"><i class="ph-fill ph-currency-inr"></i></span>
+        <h3>Transparent pricing</h3>
+        <p>Clear, itemised quotes with no hidden charges — plus easy EMI and solar-loan assistance.</p>
+        <span class="wc-tag">Honest quotes</span>
+      </article>
+      <article class="swiper-slide why-card t-lime">
+        <span class="wc-ico"><i class="ph-fill ph-wrench"></i></span>
+        <h3>Lifetime care</h3>
+        <p>AMC plans, panel cleaning and quick service visits keep your plant at peak performance.</p>
+        <span class="wc-tag">We stay with you</span>
+      </article>
+      <article class="swiper-slide why-card t-sun">
+        <span class="wc-ico"><i class="ph-fill ph-chart-line-up"></i></span>
+        <h3>Smart monitoring</h3>
+        <p>Track live generation and savings on your phone with Wi-Fi enabled inverter apps.</p>
+        <span class="wc-tag">Savings in your pocket</span>
+      </article>
+      <article class="swiper-slide why-card t-dark">
+        <span class="wc-ico"><i class="ph-fill ph-headset"></i></span>
+        <h3>Local &amp; responsive</h3>
+        <p>A real team that picks up the phone — fast support whenever you need it.</p>
+        <span class="wc-tag">Always reachable</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services section" id="services">
+  <div class="services-sun" aria-hidden="true"></div>
+  <div class="container">
+    <div class="sec-row">
+      <div class="sec-head light">
+        <span class="kicker" data-reveal><i class="ph-fill ph-sun"></i> our services</span>
+        <h2 class="title" data-split>Every kind of <em class="script">sunshine</em>, sorted.</h2>
+      </div>
+      <div class="car-nav" data-reveal>
+        <button class="car-btn light svc-prev" aria-label="Previous"><i class="ph-bold ph-arrow-left"></i></button>
+        <button class="car-btn light svc-next" aria-label="Next"><i class="ph-bold ph-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper svc-swiper" data-reveal data-cursor="drag">
+    <div class="swiper-wrapper">
+      <article class="swiper-slide svc-card">
+        <div class="svc-media media"><img src="assets/services/rooftop.webp" alt="Residential Rooftop Solar" loading="lazy" decoding="async"><span class="svc-tag">Homes</span></div>
+        <div class="svc-body">
+          <span class="svc-ico"><i class="ph-fill ph-house-line"></i></span>
+          <h3>Residential Rooftop Solar</h3>
+          <p>Rooftop solar for homes and villas, eligible for the PM Surya Ghar subsidy.</p>
+          <a href="#contact" class="svc-link">Get a quote <i class="ph-bold ph-arrow-up-right"></i></a>
+        </div>
+      </article>
+      <article class="swiper-slide svc-card">
+        <div class="svc-media media"><img src="assets/services/commercial.webp" alt="Commercial Solar" loading="lazy" decoding="async"><span class="svc-tag">Business</span></div>
+        <div class="svc-body">
+          <span class="svc-ico"><i class="ph-fill ph-buildings"></i></span>
+          <h3>Commercial Solar</h3>
+          <p>Cut power costs for offices, schools, hospitals, shops and warehouses.</p>
+          <a href="#contact" class="svc-link">Get a quote <i class="ph-bold ph-arrow-up-right"></i></a>
+        </div>
+      </article>
+      <article class="swiper-slide svc-card">
+        <div class="svc-media media"><img src="assets/services/industrial.webp" alt="Industrial Solar Power Systems" loading="lazy" decoding="async"><span class="svc-tag">Industry</span></div>
+        <div class="svc-body">
+          <span class="svc-ico"><i class="ph-fill ph-factory"></i></span>
+          <h3>Industrial Solar Power Systems</h3>
+          <p>Large-scale rooftop plants that keep factories running on clean, low-cost power.</p>
+          <a href="#contact" class="svc-link">Get a quote <i class="ph-bold ph-arrow-up-right"></i></a>
+        </div>
+      </article>
+      <article class="swiper-slide svc-card">
+        <div class="svc-media media"><img src="assets/services/inverter-battery.webp" alt="Inverter & Battery Solutions" loading="lazy" decoding="async"><span class="svc-tag">Backup</span></div>
+        <div class="svc-body">
+          <span class="svc-ico"><i class="ph-fill ph-battery-charging"></i></span>
+          <h3>Inverter &amp; Battery Solutions</h3>
+          <p>Reliable inverters and lithium batteries for uninterrupted power at home or work.</p>
+          <a href="#contact" class="svc-link">Get a quote <i class="ph-bold ph-arrow-up-right"></i></a>
+        </div>
+      </article>
+      <article class="swiper-slide svc-card">
+        <div class="svc-media media"><img src="assets/services/pump.jpg" alt="Solar Irrigation Pumps" loading="lazy" decoding="async"><span class="svc-tag">Agriculture</span></div>
+        <div class="svc-body">
+          <span class="svc-ico"><i class="ph-fill ph-drop"></i></span>
+          <h3>Solar Irrigation Pumps</h3>
+          <p>Diesel-free irrigation for farms: dependable water with zero fuel cost.</p>
+          <a href="#contact" class="svc-link">Get a quote <i class="ph-bold ph-arrow-up-right"></i></a>
+        </div>
+      </article>
+      <article class="swiper-slide svc-card">
+        <div class="svc-media media"><img src="assets/services/streetlights.jpeg" alt="Solar Street Lights" loading="lazy" decoding="async"><span class="svc-tag">Public</span></div>
+        <div class="svc-body">
+          <span class="svc-ico"><i class="ph-fill ph-lightbulb"></i></span>
+          <h3>Solar Street Lights</h3>
+          <p>Self-powered LED street lights for roads, campuses, societies and villages.</p>
+          <a href="#contact" class="svc-link">Get a quote <i class="ph-bold ph-arrow-up-right"></i></a>
+        </div>
+      </article>
+      <article class="swiper-slide svc-card">
+        <div class="svc-media media"><img src="assets/services/maintenance.jpg" alt="Service & Maintenance" loading="lazy" decoding="async"><span class="svc-tag">Care</span></div>
+        <div class="svc-body">
+          <span class="svc-ico"><i class="ph-fill ph-broom"></i></span>
+          <h3>Service &amp; Maintenance</h3>
+          <p>Scheduled panel cleaning, health checks and repairs to keep output at its peak.</p>
+          <a href="#contact" class="svc-link">Get a quote <i class="ph-bold ph-arrow-up-right"></i></a>
+        </div>
+      </article>
+      <article class="swiper-slide svc-card">
+        <div class="svc-media media"><img src="assets/services/subsidy.jpg" alt="Solar Subsidy Assistance" loading="lazy" decoding="async"><span class="svc-tag">Subsidy</span></div>
+        <div class="svc-body">
+          <span class="svc-ico"><i class="ph-fill ph-hand-coins"></i></span>
+          <h3>Solar Subsidy Assistance</h3>
+          <p>Complete PM Surya Ghar paperwork support, from registration to subsidy credit.</p>
+          <a href="#contact" class="svc-link">Get a quote <i class="ph-bold ph-arrow-up-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PM SURYA GHAR ============ -->
+<section class="surya section" id="surya">
+  <div class="surya-media" aria-hidden="true">
+    <video class="surya-vid" autoplay muted loop playsinline preload="metadata">
+      <source src="assets/surya-banner.mp4" type="video/mp4">
+    </video>
+    <div class="surya-shade"></div>
+  </div>
+  <div class="container">
+    <div class="surya-head">
+      <span class="gov-chip" data-reveal><i class="ph-fill ph-flag"></i> Government of India scheme</span>
+      <h2 class="title surya-title" data-split>PM Surya Ghar <em class="script">Muft Bijli</em> Yojana</h2>
+      <p class="lead" data-reveal>Get up to <b>300 units of free electricity every month</b> and a subsidy of up to <b>₹78,000</b> credited straight to your bank account. We take care of the whole process for you.</p>
+    </div>
+
+      </div>
+</section>
+
+<!-- ============ SUBSIDY DETAILS ============ -->
+<section class="subsidy section" id="subsidy">
+  <div class="subsidy-dots" aria-hidden="true"></div>
+  <div class="container">
+    <div class="sub-head">
+      <span class="gov-chip" data-reveal><i class="ph-fill ph-bank"></i> Government of India scheme</span>
+      <h2 class="title" data-split>Your solar subsidy, <em class="script">explained</em>.</h2>
+      <p class="lead" data-reveal>Under PM Surya Ghar Muft Bijli Yojana, eligible households get up to <b>300 units of free electricity every month</b> plus a subsidy of up to <b>₹78,000</b>. Sunora handles the portal registration, DISCOM approvals, installation and net-metering, so you can simply switch on the savings.</p>
+    </div>
+
+    <div class="sub-photos">
+      <div class="sp media" data-reveal><img src="assets/subsidy-1.webp" alt="Happy family with their new rooftop solar system" loading="lazy" decoding="async"></div>
+      <div class="sp media" data-reveal><img src="assets/subsidy-2.webp" alt="Sunora team working on a rooftop solar installation" loading="lazy" decoding="async"></div>
+      <div class="sp media" data-reveal><img src="assets/subsidy-3.webp" alt="Net meter installed for a solar customer" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="slabs" data-reveal="up">
+      <h3><i class="ph-fill ph-table"></i> Subsidy slabs for homes</h3>
+      <p class="slabs-sub">Get up to <b>300 units free</b> every month with government-backed rooftop solar.</p>
+      <div class="slabs-wrap">
+        <table>
+          <thead><tr><th>Monthly consumption</th><th>System capacity</th><th>Subsidy amount</th></tr></thead>
+          <tbody>
+            <tr><td>0 – 150 units</td><td>1 – 2 kW</td><td><b>₹30,000 – ₹60,000</b></td></tr>
+            <tr><td>150 – 300 units</td><td>2 – 3 kW</td><td><b>₹60,000 – ₹78,000</b></td></tr>
+            <tr><td>Above 300 units</td><td>3+ kW</td><td><b>₹78,000</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="sub-grid">
+      <div class="info-stack">
+        <article class="info-card" data-reveal>
+          <span class="info-ico t-blue"><i class="ph-fill ph-bank"></i></span>
+          <div>
+            <h3>What is PM Surya Ghar Muft Bijli Yojana?</h3>
+            <p>Launched by the Government of India, this scheme helps households install rooftop solar and enjoy up to 300 units of free electricity every month, with a central subsidy credited directly to your bank account. The goal: clean solar power for one crore homes across India.</p>
+          </div>
+        </article>
+
+        <article class="info-card" data-reveal>
+          <span class="info-ico t-orange"><i class="ph-fill ph-star"></i></span>
+          <div>
+            <h3>Why choose Sunora Green Energy?</h3>
+            <p>As your trusted solar partner, we make going solar completely hassle-free, start to finish:</p>
+            <ul class="tick">
+              <li><i class="ph-fill ph-check-circle"></i> Free eligibility check &amp; portal registration</li>
+              <li><i class="ph-fill ph-check-circle"></i> Complete documentation &amp; DISCOM coordination</li>
+              <li><i class="ph-fill ph-check-circle"></i> Quality panels with certified installation</li>
+              <li><i class="ph-fill ph-check-circle"></i> Subsidy follow-up until it reaches your account</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="info-card" data-reveal>
+          <span class="info-ico t-green"><i class="ph-fill ph-currency-inr"></i></span>
+          <div>
+            <h3>How much subsidy can you get?</h3>
+            <p>Eligible households can receive up to <b>₹78,000</b> in central subsidy: around ₹30,000 per kW for the first 2 kW and ₹18,000 for the 3rd kW. Our experts help you size your system right and claim the maximum subsidy you qualify for.</p>
+          </div>
+        </article>
+      </div>
+
+      <form class="cform sform" id="sform" data-reveal="up" novalidate>
+        <div class="cform-head">
+          <h3>Apply for <em class="script">subsidy</em></h3>
+          <p>Fill this in &amp; our solar experts will call you.</p>
+        </div>
+        <label class="field"><span>Name *</span><input type="text" name="name" required placeholder="Your full name"></label>
+        <label class="field"><span>Mobile number *</span><input type="tel" name="phone" required placeholder="10-digit mobile number"></label>
+        <label class="field"><span>City / location *</span><input type="text" name="city" required placeholder="e.g. your city"></label>
+        <label class="field"><span>Monthly electricity bill</span>
+          <select name="bill">
+            <option>Below ₹1,000</option>
+            <option selected>₹1,000 – ₹2,000</option>
+            <option>₹2,000 – ₹4,000</option>
+            <option>₹4,000 – ₹8,000</option>
+            <option>Above ₹8,000</option>
+          </select>
+        </label>
+        <label class="field"><span>Message</span><textarea name="msg" rows="3" placeholder="Anything you'd like to tell us? (optional)"></textarea></label>
+        <button type="submit" class="btn btn-sun btn-block" data-magnetic><span>Apply for subsidy</span><i class="ph-bold ph-paper-plane-tilt"></i></button>
+        <p class="form-msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLAR SYSTEMS EXPLAINED ============ -->
+<section class="systems section" id="systems">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="kicker" data-reveal><i class="ph-fill ph-sun"></i> know before you buy</span>
+      <h2 class="title" data-split>Solar systems <em class="script">explained</em>.</h2>
+      <p class="lead" data-reveal>On-grid, off-grid or hybrid? Here is a simple guide to how each system works, what it costs and who it is best for, so you can pick the one that fits your home.</p>
+    </div>
+
+    <div class="sys-cards">
+      <article class="sys-card" data-reveal>
+        <div class="sys-card-media"><img src="assets/on-grid.webp" alt="On-grid solar system diagram" loading="lazy" decoding="async"></div>
+        <div class="sys-card-body">
+          <span class="sys-card-ico"><i class="ph-fill ph-plugs-connected"></i></span>
+          <h3>On-Grid Solar System</h3>
+          <p>Panels power your home by day and send the extra to the grid. The net-meter credits every unit you export, so your bill drops to near zero.</p>
+          <p class="sys-card-best"><span>Best for</span> Homes, shops and factories with a reliable grid</p>
+        </div>
+      </article>
+      <article class="sys-card" data-reveal>
+        <div class="sys-card-media"><img src="assets/off-grid.webp" alt="Off-grid solar system diagram" loading="lazy" decoding="async"></div>
+        <div class="sys-card-body">
+          <span class="sys-card-ico"><i class="ph-fill ph-battery-charging"></i></span>
+          <h3>Off-Grid Solar System</h3>
+          <p>A fully independent plant: panels charge a battery bank that runs your loads day and night, with no grid connection needed.</p>
+          <p class="sys-card-best"><span>Best for</span> Farms, remote sites and areas with long power cuts</p>
+        </div>
+      </article>
+      <article class="sys-card" data-reveal>
+        <div class="sys-card-media"><img src="assets/hybrid.webp" alt="Hybrid solar system diagram" loading="lazy" decoding="async"></div>
+        <div class="sys-card-body">
+          <span class="sys-card-ico"><i class="ph-fill ph-lightning"></i></span>
+          <h3>Hybrid Solar System</h3>
+          <p>Grid savings plus battery backup in one system. Use solar first, store the extra and keep the lights on during power cuts.</p>
+          <p class="sys-card-best"><span>Best for</span> Homes and offices that face regular outages</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATE GOVERNMENT SCHEME ============ -->
+<section class="state section" id="state-scheme">
+  <div class="state-glow" aria-hidden="true"></div>
+  <div class="container">
+    <div class="state-head">
+      <span class="gov-chip" data-reveal><i class="ph-fill ph-bank"></i> State government scheme</span>
+      <h2 class="title" data-split>State government <em class="script">solar</em> subsidy</h2>
+      <p class="lead" data-reveal>Many state governments add their own incentive on top of the central PM Surya Ghar subsidy. Sunora checks what your state offers and handles the whole application for you.</p>
+    </div>
+
+    <div class="state-duo">
+      <div class="state-amount" data-reveal="left">
+        <span class="sa-ico"><i class="ph-fill ph-house-line"></i></span>
+        <b class="sa-num">&#8377;60,000<sup>*</sup></b>
+        <span class="sa-label">State subsidy benefit</span>
+        <a href="#contact" class="btn btn-sun btn-lg" data-magnetic><span>Claim your subsidy</span><i class="ph-bold ph-hand-coins"></i></a>
+      </div>
+
+      <div class="state-list" data-reveal="up">
+        <h3><i class="ph-fill ph-solar-panel"></i> State solar rooftop scheme</h3>
+        <ul class="tick">
+          <li><i class="ph-fill ph-check-circle"></i> <span><b>&#8377;60,000</b> direct state subsidy*</span></li>
+          <li><i class="ph-fill ph-check-circle"></i> <span>Central PM Surya Ghar subsidy (up to &#8377;78,000) may apply on top</span></li>
+          <li><i class="ph-fill ph-check-circle"></i> <span>3 kW system recommended for most homes</span></li>
+          <li><i class="ph-fill ph-check-circle"></i> <span>Simple application: Sunora handles the paperwork</span></li>
+          <li><i class="ph-fill ph-check-circle"></i> <span>Fast approval follow-up until the subsidy is credited</span></li>
+        </ul>
+        <p class="state-fine"><i class="ph-fill ph-info"></i> *Sample figure. The actual amount depends on your state&#8217;s current scheme, rules and your eligibility. Our team confirms the latest benefit before you apply.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEOS ============ -->
+<section class="videos section" id="videos">
+  <div class="container">
+    <div class="sec-row">
+      <div class="sec-head">
+        <span class="kicker" data-reveal><i class="ph-fill ph-sun"></i> our videos</span>
+        <h2 class="title" data-split>See the sun <em class="script">at work</em>.</h2>
+        <p class="lead" data-reveal>Real installations, real savings and real families — watch how Sunora turns ordinary rooftops into power plants. Tap the speaker to hear the story.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- To use a real video: set data-src="assets/video1.mp4" (and optional data-poster) on the .vid-card -->
+  <div class="vid-marquee" data-reveal>
+    <div class="vid-track">
+      <div class="vid-slide">
+        <div class="vid-card" data-src="assets/videos/v1.mp4" data-poster="">
+          <div class="media"></div>
+          <button class="vid-mute" type="button" aria-label="Unmute video" aria-pressed="false"><i class="ph-fill ph-speaker-slash"></i><i class="ph-fill ph-speaker-high"></i></button>
+        </div>
+      </div>
+      <div class="vid-slide">
+        <div class="vid-card" data-src="assets/videos/v2.mp4" data-poster="">
+          <div class="media"></div>
+          <button class="vid-mute" type="button" aria-label="Unmute video" aria-pressed="false"><i class="ph-fill ph-speaker-slash"></i><i class="ph-fill ph-speaker-high"></i></button>
+        </div>
+      </div>
+      <div class="vid-slide">
+        <div class="vid-card" data-src="assets/videos/v3.mp4" data-poster="">
+          <div class="media"></div>
+          <button class="vid-mute" type="button" aria-label="Unmute video" aria-pressed="false"><i class="ph-fill ph-speaker-slash"></i><i class="ph-fill ph-speaker-high"></i></button>
+        </div>
+      </div>
+      <div class="vid-slide">
+        <div class="vid-card" data-src="assets/videos/v4.mp4" data-poster="">
+          <div class="media"></div>
+          <button class="vid-mute" type="button" aria-label="Unmute video" aria-pressed="false"><i class="ph-fill ph-speaker-slash"></i><i class="ph-fill ph-speaker-high"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects section" id="projects">
+  <div class="container">
+    <div class="sec-row">
+      <div class="sec-head">
+        <span class="kicker" data-reveal><i class="ph-fill ph-sun"></i> our projects</span>
+        <h2 class="title" data-split>Rooftops we've <em class="script">lit up</em>.</h2>
+        <p class="lead" data-reveal>From compact family homes to large factory roofs — a glimpse of the solar plants Sunora has designed, installed and switched on.</p>
+      </div>
+      <div class="proj-count" data-reveal>
+        <b><span data-count="500">0</span>+</b>
+        <span>projects delivered<br>across the region</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Replace each .slot with <img src="assets/project1.jpg" alt="..."> -->
+  <div class="vid-marquee proj-marquee" data-reveal>
+    <div class="vid-track proj-track">
+      <div class="proj-slide">
+        <div class="proj-card media"><img src="assets/projects/p1.webp" alt="5 kW rooftop solar plant on a modern villa" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="proj-slide">
+        <div class="proj-card media"><img src="assets/projects/p2.webp" alt="Family on their terrace beside new rooftop solar panels" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="proj-slide">
+        <div class="proj-card media"><img src="assets/projects/p3.webp" alt="50 kW solar plant on a factory rooftop" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="proj-slide">
+        <div class="proj-card media"><img src="assets/projects/p4.webp" alt="25 kW solar plant on a school building" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="proj-slide">
+        <div class="proj-card media"><img src="assets/projects/p5.webp" alt="Farmer beside a solar water pump in his field" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="proj-slide">
+        <div class="proj-card media"><img src="assets/projects/p6.webp" alt="10 kW hybrid solar system with battery" loading="lazy" decoding="async"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq section" id="faq">
+  <div class="container faq-in">
+    <div class="faq-visual">
+      <div class="fv fv-1 media" data-reveal="left" data-speed="-0.05"><img src="assets/faqs.webp" alt="Sunora engineer discussing a rooftop solar plan with a customer" loading="lazy" decoding="async"></div>
+      <a href="tel:+917600781800" class="faq-call" data-reveal>
+        <span class="fc-ring"><i class="ph-fill ph-phone-call"></i></span>
+        <span><em>Still curious?</em><b>+91 76007 81800</b></span>
+      </a>
+      <span class="sticker st-q">Ask us anything!</span>
+    </div>
+
+    <div class="faq-list">
+      <div class="sec-head">
+        <span class="kicker" data-reveal><i class="ph-fill ph-sun"></i> our FAQs</span>
+        <h2 class="title" data-split>Questions? We've got <em class="script">answers</em>.</h2>
+      </div>
+
+      <div class="acc" data-reveal>
+        <div class="acc-item open">
+          <button class="acc-q" aria-expanded="true"><span>How much subsidy can I get under PM Surya Ghar?</span><i class="ph-bold ph-plus"></i></button>
+          <div class="acc-a"><div><p>Residential consumers get ₹30,000 per kW for the first 2 kW and ₹18,000 for the 3rd kW — up to a maximum of ₹78,000 for systems of 3 kW and above. The amount is credited directly to your bank account after commissioning.</p></div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q" aria-expanded="false"><span>How much does a rooftop solar system cost?</span><i class="ph-bold ph-plus"></i></button>
+          <div class="acc-a"><div><p>Cost depends on system size, panel technology, structure height and site conditions. Share your monthly bill with us and we'll send a transparent, itemised quote — with the subsidy already factored in.</p></div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q" aria-expanded="false"><span>How much roof space do I need?</span><i class="ph-bold ph-plus"></i></button>
+          <div class="acc-a"><div><p>Roughly 80–100 sq. ft. of shadow-free roof area per kW. A typical 3 kW home system needs about 250–300 sq. ft. Our free site survey confirms the exact layout.</p></div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-q" aria-expanded="false"><span>How long does installation take?</span><i class="ph-bold ph-plus"></i></button>
+          <div class="acc-a"><div><p>Physical installation of a home system usually takes 1–3 days. Approvals and net-meter installation by the DISCOM can take a few weeks — we follow up on everything for you.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testi section" id="testimonials">
+  <div class="testi-quote" aria-hidden="true">“</div>
+  <div class="container">
+    <div class="sec-row">
+      <div class="sec-head">
+        <span class="kicker" data-reveal><i class="ph-fill ph-sun"></i> testimonials</span>
+        <h2 class="title" data-split>Happy roofs, <em class="script">happier</em> people.</h2>
+      </div>
+      <div class="car-nav" data-reveal>
+        <button class="car-btn testi-prev" aria-label="Previous"><i class="ph-bold ph-arrow-left"></i></button>
+        <button class="car-btn testi-next" aria-label="Next"><i class="ph-bold ph-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper testi-swiper" data-reveal data-cursor="drag">
+    <div class="swiper-wrapper">
+      <article class="swiper-slide tcard">
+        <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+        <p>"Our electricity bill went from ₹4,000 to almost nothing. Sunora handled the subsidy paperwork completely, we did not have to run around for anything."</p>
+        <footer><img class="avatar" src="assets/people/person-1.webp" alt="Rajesh Kumar" loading="lazy" decoding="async"><div><b>Rajesh Kumar</b><small>3 kW · Residential</small></div><i class="ph-fill ph-quotes q"></i></footer>
+      </article>
+      <article class="swiper-slide tcard t-alt">
+        <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+        <p>"Very professional team. They explained everything clearly, finished the installation in two days and left the roof spotless."</p>
+        <footer><img class="avatar" src="assets/people/person-2.webp" alt="Amit Sharma" loading="lazy" decoding="async"><div><b>Amit Sharma</b><small>5 kW · Residential</small></div><i class="ph-fill ph-quotes q"></i></footer>
+      </article>
+      <article class="swiper-slide tcard">
+        <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+        <p>"Our factory power cost dropped massively. The plant has been running perfectly and the monitoring app is a great touch."</p>
+        <footer><img class="avatar" src="assets/people/person-3.webp" alt="Vikram Singh" loading="lazy" decoding="async"><div><b>Vikram Singh</b><small>50 kW · Commercial</small></div><i class="ph-fill ph-quotes q"></i></footer>
+      </article>
+      <article class="swiper-slide tcard t-alt">
+        <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+        <p>"The subsidy came straight into my account just like they promised. Honest pricing and great after-sales support."</p>
+        <footer><img class="avatar" src="assets/people/person-4.webp" alt="Sandeep Yadav" loading="lazy" decoding="async"><div><b>Sandeep Yadav</b><small>2 kW · Residential</small></div><i class="ph-fill ph-quotes q"></i></footer>
+      </article>
+      <article class="swiper-slide tcard">
+        <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+        <p>"The solar pump changed everything on our farm. No more diesel costs and water whenever we need it. Thank you, Sunora team!"</p>
+        <footer><img class="avatar" src="assets/people/person-5.webp" alt="Rohit Verma" loading="lazy" decoding="async"><div><b>Rohit Verma</b><small>Solar Pump · Agriculture</small></div><i class="ph-fill ph-quotes q"></i></footer>
+      </article>
+      <article class="swiper-slide tcard t-alt">
+        <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+        <p>"Hybrid system with battery: no more power-cut worries and no inverter noise. Best decision we made for our home."</p>
+        <footer><img class="avatar" src="assets/people/person-6.webp" alt="Anil Gupta" loading="lazy" decoding="async"><div><b>Anil Gupta</b><small>10 kW · Hybrid</small></div><i class="ph-fill ph-quotes q"></i></footer>
+      </article>
+      <article class="swiper-slide tcard">
+        <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+        <p>"Sunora designed and installed our school rooftop plant on time. Our monthly bill has dropped by more than half."</p>
+        <footer><img class="avatar" src="assets/people/person-7.webp" alt="Manoj Mishra" loading="lazy" decoding="async"><div><b>Manoj Mishra</b><small>25 kW · School Campus</small></div><i class="ph-fill ph-quotes q"></i></footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact section" id="contact">
+  <div class="container contact-in">
+    <div class="contact-info">
+      <div class="sec-head">
+        <span class="kicker" data-reveal><i class="ph-fill ph-sun"></i> contact us</span>
+        <h2 class="title" data-split>Let's light up your <em class="script">roof</em>.</h2>
+      </div>
+      <p class="lead" data-reveal>Book a free site survey or just ask a question — we usually reply within a few hours.</p>
+
+      <div class="cinfo">
+        <a href="tel:+917600781800" class="ci" data-reveal><span class="ci-ico"><i class="ph-fill ph-phone-call"></i></span><span><small>Call us</small><b>+91 76007 81800</b></span><i class="ph-bold ph-arrow-up-right go"></i></a>
+        <a href="https://wa.me/917600781800" target="_blank" rel="noopener" class="ci" data-reveal><span class="ci-ico wa"><i class="ph-fill ph-whatsapp-logo"></i></span><span><small>WhatsApp</small><b>Chat with us</b></span><i class="ph-bold ph-arrow-up-right go"></i></a>
+        <a href="mailto:sunoragreenenergy@gmail.com" class="ci" data-reveal><span class="ci-ico"><i class="ph-fill ph-envelope-simple"></i></span><span><small>Email</small><b>sunoragreenenergy@gmail.com</b></span><i class="ph-bold ph-arrow-up-right go"></i></a>
+        <div class="ci" data-reveal><span class="ci-ico"><i class="ph-fill ph-map-pin"></i></span><span><small>Visit us</small><b>Your office address, City, State</b></span></div>
+      </div>
+
+      <!-- Replace the q= value (or the whole src) with your exact address / Google Maps "Embed a map" link -->
+      <div class="map media" data-reveal><iframe src="https://www.google.com/maps?q=Sunora+Green+Energy&output=embed" title="Sunora Green Energy on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+    </div>
+
+    <form class="cform" id="cform" data-reveal="up" novalidate>
+      <div class="cform-head">
+        <h3>Get your <em class="script">free</em> quote</h3>
+        <p>Fill this in &amp; we'll reach out on WhatsApp.</p>
+      </div>
+      <div class="frow">
+        <label class="field"><span>Full name</span><input type="text" name="name" required placeholder="Your name"></label>
+        <label class="field"><span>Phone</span><input type="tel" name="phone" required placeholder="10-digit mobile" pattern="[0-9+\s]{10,14}"></label>
+      </div>
+      <div class="frow">
+        <label class="field"><span>Email</span><input type="email" name="email" placeholder="you@example.com"></label>
+        <label class="field"><span>City</span><input type="text" name="city" placeholder="Your city"></label>
+      </div>
+      <div class="field">
+        <span>I'm interested in</span>
+        <div class="pills">
+          <label><input type="radio" name="type" value="Residential" checked><b><i class="ph-bold ph-house-line"></i> Home</b></label>
+          <label><input type="radio" name="type" value="Commercial"><b><i class="ph-bold ph-buildings"></i> Business</b></label>
+          <label><input type="radio" name="type" value="Agriculture / Pump"><b><i class="ph-bold ph-plant"></i> Farm</b></label>
+          <label><input type="radio" name="type" value="AMC / Service"><b><i class="ph-bold ph-wrench"></i> Service</b></label>
+        </div>
+      </div>
+      <label class="field"><span>Average monthly bill</span>
+        <select name="bill">
+          <option>Below ₹1,500</option>
+          <option selected>₹1,500 – ₹3,000</option>
+          <option>₹3,000 – ₹6,000</option>
+          <option>₹6,000 – ₹15,000</option>
+          <option>Above ₹15,000</option>
+        </select>
+      </label>
+      <label class="field"><span>Message</span><textarea name="msg" rows="3" placeholder="Tell us about your roof, location or questions…"></textarea></label>
+      <button type="submit" class="btn btn-sun btn-block btn-lg" data-magnetic><span>Send enquiry</span><i class="ph-bold ph-paper-plane-tilt"></i></button>
+      <p class="form-msg" id="formMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ MOVING STRIP (before footer) ============ -->
+<div class="marquee strip-flat" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-group"><span>Go Solar</span><i class="ph-fill ph-sun"></i><span>Save More</span><i class="ph-fill ph-leaf"></i><span>Live Green</span><i class="ph-fill ph-lightning"></i><span>Clean Energy</span><i class="ph-fill ph-sun"></i><span>Go Solar</span><i class="ph-fill ph-sun"></i><span>Save More</span><i class="ph-fill ph-leaf"></i><span>Live Green</span><i class="ph-fill ph-lightning"></i><span>Clean Energy</span><i class="ph-fill ph-sun"></i></div>
+    <div class="marquee-group"><span>Go Solar</span><i class="ph-fill ph-sun"></i><span>Save More</span><i class="ph-fill ph-leaf"></i><span>Live Green</span><i class="ph-fill ph-lightning"></i><span>Clean Energy</span><i class="ph-fill ph-sun"></i><span>Go Solar</span><i class="ph-fill ph-sun"></i><span>Save More</span><i class="ph-fill ph-leaf"></i><span>Live Green</span><i class="ph-fill ph-lightning"></i><span>Clean Energy</span><i class="ph-fill ph-sun"></i></div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="f-cta" data-reveal>
+      <h2>Ready to make your roof <em class="script">earn</em>?</h2>
+      <a href="#contact" class="btn btn-sun btn-lg" data-magnetic><span>Book Free Survey</span><i class="ph-bold ph-arrow-right"></i></a>
+    </div>
+
+    <div class="f-grid">
+      <div class="f-brand">
+        <a href="#home" class="brand light"><img src="assets/logo.jpg" alt="Sunora Green Energy logo"><span class="brand-txt"><b>Sunora</b><small>Green Energy</small></span></a>
+        <p>Clean energy, brighter tomorrow. Rooftop solar solutions for homes, businesses &amp; farms — with complete PM Surya Ghar subsidy support.</p>
+        <div class="f-social">
+          <a href="#" aria-label="Instagram"><i class="ph-bold ph-instagram-logo"></i></a>
+          <a href="#" aria-label="Facebook"><i class="ph-bold ph-facebook-logo"></i></a>
+          <a href="#" aria-label="YouTube"><i class="ph-bold ph-youtube-logo"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="ph-bold ph-linkedin-logo"></i></a>
+          <a href="https://wa.me/917600781800" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ph-bold ph-whatsapp-logo"></i></a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Quick links</h4>
+        <a href="#about">About us</a><a href="#why">Why choose us</a><a href="#surya">PM Surya Ghar</a><a href="#projects">Projects</a><a href="#videos">Videos</a><a href="#faq">FAQs</a>
+      </div>
+      <div class="f-col">
+        <h4>Services</h4>
+        <a href="#services">Residential solar</a><a href="#services">Commercial solar</a><a href="#services">On-grid / Off-grid</a><a href="#services">Hybrid systems</a><a href="#services">Solar pumps</a><a href="#services">AMC &amp; cleaning</a>
+      </div>
+      <div class="f-col f-contact">
+        <h4>Get in touch</h4>
+        <a href="tel:+917600781800"><i class="ph-bold ph-phone"></i> +91 76007 81800</a>
+        <a href="mailto:sunoragreenenergy@gmail.com"><i class="ph-bold ph-envelope-simple"></i> sunoragreenenergy@gmail.com</a>
+        <span><i class="ph-bold ph-map-pin"></i> Your office address, City, State</span>
+        <span><i class="ph-bold ph-clock"></i> Mon – Sat · 9:30 AM – 7:00 PM</span>
+      </div>
+    </div>
+
+    <div class="f-bottom">
+      <span>© <span id="year">2026</span> Sunora Green Energy. All rights reserved.</span>
+      <span class="f-made">Made with <i class="ph-fill ph-sun"></i> &amp; <i class="ph-fill ph-leaf"></i></span>
+    </div>
+  </div>
+  <div class="f-giant" aria-hidden="true">SUNORA</div>
+</footer>
+
+<!-- Floating actions -->
+<a href="https://wa.me/917600781800" class="fab-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a>
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" class="tt-bg"/><circle cx="24" cy="24" r="21" class="tt-ring" id="ttRing"/></svg>
+  <i class="ph-bold ph-arrow-up"></i>
+</button>
+
+<!-- Lightbox (videos and project photos) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer" aria-hidden="true">
+  <button class="lb-x" aria-label="Close"><i class="ph-bold ph-x"></i></button>
+  <button class="lb-nav lb-prev" aria-label="Previous"><i class="ph-bold ph-arrow-left"></i></button>
+  <div class="lb-stage" id="lbStage"></div>
+  <button class="lb-nav lb-next" aria-label="Next"><i class="ph-bold ph-arrow-right"></i></button>
+  <span class="lb-count" id="lbCount"></span>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

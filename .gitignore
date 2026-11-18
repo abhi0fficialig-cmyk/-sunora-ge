@@ -1,0 +1,15 @@
+# Only the website itself is committed. Source photos/videos in the project root
+# (originals with watermarks, raw exports, etc.) are kept out of the repo.
+/*
+!/.gitignore
+!/index.html
+!/vercel.json
+!/robots.txt
+!/README.md
+!/assets/
+!/css/
+!/js/
+
+.vercel
+.DS_Store
+Thumbs.db
