@@ -1645,7 +1645,8 @@ a.ci:hover .go { opacity: 1; transform: rotate(45deg); }
 .header .brand img { width: 84px; height: 84px; border-width: 3px; box-shadow: 4px 4px 0 var(--ink); }
 .header.scrolled .brand img { width: 70px; height: 70px; }
 .header .brand img { transition: width .35s var(--ease), height .35s var(--ease), transform .6s var(--spring); }
-.nav a { font-size: 16px; padding: 10px 16px; }
+.nav a { font-size: 14px; padding: 8px 12px; white-space: nowrap; }
+@media (max-width: 1320px) { .nav a { font-size: 13px; padding: 7px 9px; } .header-cta .btn { display: none; } }
 .icon-btn { width: 52px; height: 52px; }
 .header-cta .btn { padding: 14px 16px 14px 24px; font-size: 17px; }
 .sform { top: 130px; }
