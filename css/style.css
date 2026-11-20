@@ -1825,3 +1825,8 @@ img, video, iframe, svg { max-width: 100%; }
 @media (max-width: 1500px) { .nav a { font-size: 15px; padding: 9px 12px; } .header-cta .btn { padding: 12px 14px 12px 20px; font-size: 16px; } }
 @media (max-width: 1380px) { .header-cta .icon-btn { display: none; } .header .brand-txt b { font-size: 28px; } }
 @media (max-width: 1260px) { .nav { display: none; } .burger { display: flex; } }
+
+/* Mobile/tablet: the subsidy form must not be pushed down by the desktop sticky offset */
+@media (max-width: 980px) {
+  .sform { position: relative !important; top: auto !important; }
+}
